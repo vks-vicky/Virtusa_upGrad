@@ -1,3 +1,8 @@
 This file is being made for git rebase practice.
 My understanding of rebase if that it sets the foundation/base to the given branch.
 When do we use it?
+
+-------------------
+
+We use it when the branch is probably dying(breaking changes are about to occur)
+It temporarily stes the changes aside, rebase to branch and then reapplies the changes.
