@@ -1,5 +1,6 @@
 Hi, I don't have any freinds or Do I ?
 
+<<<<<<< HEAD
 Aditya
 Atul
 Ansh 
@@ -7,3 +8,8 @@ Ankit
 Avinash
 Ankur
 Aniket
+=======
+Aman
+Raj
+Ansh
+>>>>>>> 6bf4ddc12d7ffa1471fd9afde45236645838325e
