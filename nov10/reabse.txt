@@ -1,0 +1,3 @@
+This file is being made for git rebase practice.
+My understanding of rebase if that it sets the foundation/base to the given branch.
+When do we use it?
