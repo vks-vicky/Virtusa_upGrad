@@ -1,0 +1,4 @@
+package com.java.employ.model;
+
+public class Employ {
+}
