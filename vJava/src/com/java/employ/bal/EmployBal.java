@@ -50,4 +50,19 @@ public class EmployBal {
         return isValid;
     }
 
+    public Employ searchEmployBal(int employ_id) {
+        return employDao.searchEmployDao(employ_id);
+    }
+
+    public String removeEmployBal(int employ_id) {
+        return employDao.removeEmployDao(employ_id);
+    }
+
+    public String updateEmployBal(Employ employ) throws EmployException {
+        if(validateEmploy(employ)==true){
+            return employDao.updateEmployDao(employ);
+        }
+        throw new EmployException(sb.toString());
+    }
+
 }
