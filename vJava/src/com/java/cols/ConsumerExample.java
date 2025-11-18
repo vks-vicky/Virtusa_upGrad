@@ -19,7 +19,7 @@ public class ConsumerExample {
         employList.forEach(employRecord1);
 
         System.out.println("Employ names are... ");
-        Consumer<Employ> empName = e -> System.out.println("Employ Name "+ e.getName());
+        Consumer<Employ> empName = e -> System.out.println("Employ Name: "+ e.getName());
         employList.forEach(empName);
 
         Consumer<Employ> increaseSalary = e -> e.setBasic(e.getBasic()*1.10);

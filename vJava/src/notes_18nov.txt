@@ -15,3 +15,11 @@ printing and logging etc...
 (ii) Predicate : This interface represents a Boolean valued function of one arg, it is commonly used for filtering operations in streams.
 
 Predicate<Object> obj = (value) -> condition;
+
+Function interface takes on arguments and returns a result. It's commonly used for transforming data.
+
+Function<Integer,Integer> obj = (value) -> code;
+
+map() : Transforms each element of stream into another object, resulting in a stream of the same size as input. It's used for one to one transformation.
+
+flatMap() Transforms each element of stream into zero or more elements, as changing the size of the stream. It's used for one to many transformation.s and flattening nested structures.
