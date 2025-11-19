@@ -5,7 +5,7 @@ import com.java.leave.dao.LeaveDaoImpl;
 import com.java.leave.exception.LeaveException;
 import com.java.leave.model.Leave;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 public class LeaveBal {
@@ -46,7 +46,7 @@ public class LeaveBal {
 
     public boolean validateLeave(Leave leave) {
         boolean isValid = true;
-        Date now = new Date();
+        java.sql.Date now = new java.sql.Date(System.currentTimeMillis());
         if(leave.getLeaveEndDate().compareTo(leave.getLeaveStartDate()) < 0 ){
             isValid = false;
             sb.append("End Date must be after Start Date...");
@@ -55,7 +55,7 @@ public class LeaveBal {
             isValid = false;
             sb.append("End Date must be greater than yesterday...");
         }
-        if (leave.getLeaveStartDate().compareTo(now) > 0 ){
+        if (leave.getLeaveStartDate().compareTo(now) < 0 ){
             isValid = false;
             sb.append("Start Date must be before yesterday...");
         }
