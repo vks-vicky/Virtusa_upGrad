@@ -5,7 +5,6 @@ import com.java.employ.exception.EmployException;
 import com.java.employ.model.Employ;
 import com.java.employ.model.Gender;
 
-import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Scanner;
 
