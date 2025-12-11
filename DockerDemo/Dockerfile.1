@@ -6,7 +6,7 @@ WORKDIR /app
 COPY src ./src
 
 # Compile Java program
-RUN javac src/main/java/org/example2/Input.java -d out
+RUN javac src/main/java/org/example/HelloWorld.java -d out
 
 # Set default command
-CMD ["java", "-cp", "out", "org.example2.Input"]
+CMD ["java", "-cp", "out", "org.example.HelloWorld"]
